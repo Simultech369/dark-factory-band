@@ -10,14 +10,15 @@ READY FOR SUBMISSION. The package features a dual execution model:
 
 ## Upload / Link Map
 
-- **Repository / Directory:** `C:\Users\Josh\.gemini\antigravity\scratch\dark-factory-submission`
-- **BAND Orchestration Runner:** `band_factory_runner.py`
-- **Local Factory Engine:** `factory.py`
-- **Review Guardrails:** `guardrails.py`
-- **Generated Application:** `workspace/pocketful/payments.py`
-- **Generated Test Suite:** `workspace/tests/test_payments.py`
-- **Cryptographic Run Receipt:** `run_receipt.json`
-- **Specification & Documentation:** `README.md`
+- **GitHub Repository:** [https://github.com/Simultech369/dark-factory-band](https://github.com/Simultech369/dark-factory-band)
+- **Live BAND Session Room:** [https://app.band.ai/sessions/84d4e744-cbe5-4014-b3c7-2b130b32b4d6](https://app.band.ai/sessions/84d4e744-cbe5-4014-b3c7-2b130b32b4d6)
+- **BAND Orchestration Runner:** [`band_factory_runner.py`](https://github.com/Simultech369/dark-factory-band/blob/main/band_factory_runner.py)
+- **Local Factory Engine:** [`factory.py`](https://github.com/Simultech369/dark-factory-band/blob/main/factory.py)
+- **Review Guardrails:** [`guardrails.py`](https://github.com/Simultech369/dark-factory-band/blob/main/guardrails.py)
+- **Generated Application:** [`workspace/pocketful/payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/workspace/pocketful/payments.py)
+- **Generated Test Suite:** [`workspace/tests/test_payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/workspace/tests/test_payments.py)
+- **Cryptographic Run Receipt:** [`run_receipt.json`](https://github.com/Simultech369/dark-factory-band/blob/main/run_receipt.json)
+- **Specification & Documentation:** [`README.md`](https://github.com/Simultech369/dark-factory-band/blob/main/README.md)
 
 ---
 
