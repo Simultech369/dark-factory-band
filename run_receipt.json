@@ -1,0 +1,208 @@
+{
+  "schema_version": "dark_factory.run_receipt.v2",
+  "factory_version": "1.1.0-darkfactory",
+  "council_architecture": "5-surface-guardrail",
+  "claim_boundary": "local_demo_evidence_not_production_readiness",
+  "workspace": "C:\\Users\\Josh\\.gemini\\antigravity\\scratch\\dark-factory-submission\\workspace",
+  "plan": {
+    "product": "Pocketful",
+    "architecture": "thread-safe in-memory payment ledger",
+    "modules": [
+      {
+        "name": "pocketful.payments",
+        "description": "balances, transfer, split rounding"
+      },
+      {
+        "name": "tests.test_payments",
+        "description": "money conservation and concurrency"
+      },
+      {
+        "name": "README",
+        "description": "demo and verification commands"
+      }
+    ],
+    "acceptance_criteria": [
+      "deterministic cent rounding",
+      "failed split payments do not partially mutate balances",
+      "idempotency keys prevent duplicate retry transfers",
+      "no negative balances",
+      "concurrent transfers conserve total money",
+      "ruff and pytest pass from the generated workspace"
+    ]
+  },
+  "generated_files": [
+    "pyproject.toml",
+    "README.md",
+    "pocketful/__init__.py",
+    "pocketful/payments.py",
+    "tests/test_payments.py"
+  ],
+  "expected_generated_files": [
+    "pyproject.toml",
+    "README.md",
+    "pocketful/__init__.py",
+    "pocketful/payments.py",
+    "tests/test_payments.py"
+  ],
+  "file_sha256": {
+    "pyproject.toml": "121a32649accea2aa8d2fa69cb2bec8c4541697ed35e044676b19a535e4890ad",
+    "README.md": "be6693b4ffe923f3c34839776bf5299afc0512af9eb22aeff9aae4b0a84cdf7a",
+    "pocketful/__init__.py": "2f1a3b462e7e9d006f79c73dcd7bb697e614ceda6ac620b96f2b2f40a735d098",
+    "pocketful/payments.py": "a739fb6dd39ab4fb4682edafd939355144d22cecbc3afdfc6fc290677f706528",
+    "tests/test_payments.py": "efcb446e0d31d5ebe77019f7001b83e2a7d5dbce9a8edab0ae64c7fea3723719"
+  },
+  "surface_results": [
+    {
+      "surface_name": "Surface 1 (Spec and Scope)",
+      "passed": true,
+      "details": "Task specification parsed, bounded, and validated.",
+      "command": null,
+      "returncode": null,
+      "stdout": "",
+      "stderr": "",
+      "duration_ms": 0
+    },
+    {
+      "surface_name": "Surface 2 (Quality and Linting)",
+      "passed": true,
+      "details": "ruff check passed cleanly.",
+      "command": [
+        "C:\\Users\\Josh\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "pocketful/__init__.py",
+        "pocketful/payments.py",
+        "tests/test_payments.py"
+      ],
+      "returncode": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": "",
+      "duration_ms": 540
+    },
+    {
+      "surface_name": "Surface 3 (Behavioral Verification)",
+      "passed": true,
+      "details": "pytest passed: ........                                                                 [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pytest",
+      "command": [
+        "C:\\Users\\Josh\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "--basetemp=.pytest_tmp",
+        "-q"
+      ],
+      "returncode": 0,
+      "stdout": "........                                                                 [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pytest\\cacheprovider.py:469\n  C:\\Users\\Josh\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pytest\\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\\Users\\Josh\\.gemini\\antigravity\\scratch\\dark-factory-submission\\workspace\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\Josh\\\\.gemini\\\\antigravity\\\\scratch\\\\dark-factory-submission\\\\workspace\\\\.pytest_cache\\\\v\\\\cache'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n8 passed, 1 warning in 0.13s\n",
+      "stderr": "",
+      "duration_ms": 2426
+    },
+    {
+      "surface_name": "Surface 4 (Security Invariants)",
+      "passed": true,
+      "details": "Generated files contain no detected secrets, sys.path mutation, or private keys.",
+      "command": null,
+      "returncode": null,
+      "stdout": "",
+      "stderr": "",
+      "duration_ms": 0
+    },
+    {
+      "surface_name": "Surface 5 (Delivery)",
+      "passed": true,
+      "details": "Delivery standards validated with 5 generated artifacts present.",
+      "command": null,
+      "returncode": null,
+      "stdout": "",
+      "stderr": "",
+      "duration_ms": 0
+    }
+  ],
+  "completeness": {
+    "files_complete": true,
+    "surfaces_complete": true,
+    "expected_surface_names": [
+      "Surface 1 (Spec and Scope)",
+      "Surface 2 (Quality and Linting)",
+      "Surface 3 (Behavioral Verification)",
+      "Surface 4 (Security Invariants)",
+      "Surface 5 (Delivery)"
+    ],
+    "observed_surface_names": [
+      "Surface 1 (Spec and Scope)",
+      "Surface 2 (Quality and Linting)",
+      "Surface 3 (Behavioral Verification)",
+      "Surface 4 (Security Invariants)",
+      "Surface 5 (Delivery)"
+    ]
+  },
+  "execution_trace": [
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "PLANNING",
+      "message": "Decomposing specification for 'Pocketful'...",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "SURFACE_1_SPEC",
+      "message": "Task specification parsed, bounded, and validated.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "PLANNING",
+      "message": "Architecture plan established with executable checks.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "IMPLEMENTATION",
+      "message": "Synthesizing files for Pocketful...",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "IMPLEMENTATION",
+      "message": "Materialized 5 generated artifacts into C:\\Users\\Josh\\.gemini\\antigravity\\scratch\\dark-factory-submission\\workspace.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:37",
+      "phase": "VERIFICATION",
+      "message": "Starting Council 5-Surface Guardrail Verification...",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:40",
+      "phase": "SURFACE_2_QUALITY",
+      "message": "ruff check passed cleanly.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:40",
+      "phase": "SURFACE_3_TESTS",
+      "message": "pytest passed: ........                                                                 [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pytest",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:40",
+      "phase": "SURFACE_4_SECURITY",
+      "message": "Generated files contain no detected secrets, sys.path mutation, or private keys.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:40",
+      "phase": "SURFACE_5_DELIVERY",
+      "message": "Delivery standards validated with 5 generated artifacts present.",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-09-28 14:16:40",
+      "phase": "VERIFICATION",
+      "message": "All Council Review Surfaces PASSED.",
+      "status": "SUCCESS"
+    }
+  ],
+  "total_steps": 11,
+  "verified": true
+}
