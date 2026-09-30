@@ -78,9 +78,15 @@ The system operates as a 3-agent assembly line with an adversarial critic overla
 
 ---
 
+## Trajectory Invariant Sequencing
+
+Trajectory Invariant Sequencing: The BAND run uses explicit handoff barriers instead of letting agents race in parallel. Planner first decomposes the Pocketful task and creates the room tasks; Coder only materializes the clean-room files after that handoff; Critic only audits after Coder reports completion. The final receipt is produced after the ordered sequence completes, binding the reviewed files, tool exits, and SHA-256 hashes to the completed trajectory.
+
+---
+
 ## Technical Specifications (Pocketful Track)
 
-The generated application is a clean-room, production-grade Python payment engine (`workspace/pocketful/payments.py`) meeting strict financial constraints:
+The generated application is a clean-room, production-grade Python payment engine (`stage-1/pocketful/payments.py`) meeting strict financial constraints:
 - **Thread Safety:** Fine-grained mutex locking ensures concurrent multi-party transfers never cause race conditions or money leakage.
 - **Atomic Split Payments:** Multi-payer splits feature an atomic preflight check—if any single participant lacks sufficient balance, zero mutations occur.
 - **Exact Cent Rounding:** Split distributions round deterministically to whole cents without fractional loss.
@@ -91,13 +97,29 @@ The generated application is a clean-room, production-grade Python payment engin
 
 ## Verification & Execution Instructions
 
-### Mode 1: Local Deterministic Run
+### Mode 1: Clean Container Start & HTTP Service (`stage-1/`)
+
+The hackathon requires that the submitted service builds and serves an HTTP service from a clean container:
+
+```bash
+cd stage-1
+docker build -t dark-factory-stage-1 .
+docker run --rm -p 8000:8000 dark-factory-stage-1
+```
+
+**Expected Container Output:**
+- `INFO: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)`
+- Fully accessible HTTP endpoints: `GET /health`, `POST /accounts`, `GET /accounts/{address}/balance`, `POST /transfers`, `POST /splits`, `GET /export`, `POST /import`
+- All 17 verification tests passing cleanly.
+
+
+### Mode 2: Local Deterministic Run
 
 To run the software factory locally and verify all 5 review surfaces:
 
 ```powershell
 Set-Location -LiteralPath "C:\Users\Josh\.gemini\antigravity\scratch\dark-factory-submission"
-python factory.py --track pocketful --workspace .\workspace --output-receipt .\run_receipt.json
+python factory.py --track pocketful --workspace .\stage-1 --output-receipt .\run_receipt.json
 ```
 
 **Expected Output:**
@@ -107,9 +129,9 @@ python factory.py --track pocketful --workspace .\workspace --output-receipt .\r
 - Surface 3 reports `8 passed in 0.08s`
 - Surface 4 confirms zero security/secret violations
 
-### Mode 2: Live BAND Multi-Agent Room Run
+### Mode 3: Live BAND Multi-Agent Room Run
 
-1. Open [app.band.ai](https://app.band.ai) and ensure 3 agents exist:
+1. Open [app.band.ai](https://app.band.ai) and ensure 3 agents exist (configured with `mandates/`):
    - `DarkFactoryPlanner`
    - `DarkFactoryCoder`
    - `DarkFactoryCritic`

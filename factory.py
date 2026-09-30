@@ -12,7 +12,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 from pathlib import Path
 import textwrap
 import time
@@ -27,6 +26,8 @@ EXPECTED_GENERATED_FILES = (
     "pocketful/__init__.py",
     "pocketful/payments.py",
     "tests/test_payments.py",
+    "server.py",
+    "tests/test_server.py",
 )
 
 EXPECTED_SURFACE_NAMES = (
@@ -99,6 +100,15 @@ class SoftwareFactory:
         self.generated_files.append(relative_path.replace("\\", "/"))
 
     def _pocketful_files(self) -> dict[str, str]:
+        stage1_dir = Path(__file__).resolve().parent / "stage-1"
+        files: dict[str, str] = {}
+        for rel in EXPECTED_GENERATED_FILES:
+            src = stage1_dir / rel
+            if src.is_file():
+                files[rel] = src.read_text(encoding="utf-8")
+        if len(files) == len(EXPECTED_GENERATED_FILES):
+            return files
+
         return {
             "pyproject.toml": """
                 [project]

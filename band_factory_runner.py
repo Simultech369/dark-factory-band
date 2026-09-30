@@ -15,7 +15,6 @@ Passes the BAND "Delete Test":
 from __future__ import annotations
 
 import asyncio
-import json
 import logging
 import os
 import sys
@@ -30,13 +29,12 @@ from band.core.simple_adapter import SimpleAdapter
 SUBMISSION_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SUBMISSION_DIR))
 
-from factory import SoftwareFactory, EXPECTED_GENERATED_FILES, EXPECTED_SURFACE_NAMES
-from guardrails import CouncilGuardrails
+from factory import EXPECTED_SURFACE_NAMES, SoftwareFactory  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger("dark_factory_band")
 
-WORKSPACE_DIR = SUBMISSION_DIR / "workspace"
+WORKSPACE_DIR = SUBMISSION_DIR / "stage-1"
 
 POCKETFUL_SPEC = (
     "Build a secure clean-room payment and wallet ledger with balance tracking, "
@@ -167,10 +165,10 @@ class PlannerAdapter(SimpleAdapter):
 
             handoff_msg = (
                 "[DarkFactoryPlanner] Architecture Plan Approved\n\n"
-                "- Product: Pocketful In-Memory Payment Ledger\n"
-                "- Target Files: pyproject.toml, README.md, pocketful/__init__.py, pocketful/payments.py, tests/test_payments.py\n"
-                "- Key Requirements: Thread-safe transfers, atomic split preflight, exact cent rounding, idempotency keys, money conservation.\n\n"
-                f"-> {coder_tag} please materialize the clean-room implementation in the workspace and notify {critic_tag} when ready for audit."
+                "- Product: Pocketful In-Memory Payment Ledger & HTTP API\n"
+                "- Target Files: pyproject.toml, README.md, pocketful/__init__.py, pocketful/payments.py, tests/test_payments.py, server.py, tests/test_server.py\n"
+                "- Key Requirements: Thread-safe transfers, atomic split preflight, exact cent rounding, idempotency keys, money conservation, and complete HTTP JSON API.\n\n"
+                f"-> {coder_tag} please materialize the clean-room implementation in stage-1/ and notify {critic_tag} when ready for audit."
             )
             await tools.send_message(
                 content=handoff_msg,
@@ -213,7 +211,7 @@ class CoderAdapter(SimpleAdapter):
             logger.info("[CoderAdapter] Materializing clean-room files...")
 
             await tools.send_event(
-                content="Materializing 5 clean-room Pocketful payment engine artifacts into workspace/.",
+                content="Materializing clean-room Pocketful payment engine artifacts and HTTP API into stage-1/.",
                 message_type="tool_call",
                 metadata={"action": "write_artifacts", "target_dir": str(WORKSPACE_DIR)}
             )
@@ -235,7 +233,7 @@ class CoderAdapter(SimpleAdapter):
                 for t in getattr(tasks_res, "data", []) or []:
                     subject = getattr(t, "subject", "") or ""
                     if "materialize" in subject.lower() or "implementation" in subject.lower():
-                        await tools.update_task(id=t.id, comment="All 5 clean-room artifacts synthesized in workspace/.")
+                        await tools.update_task(id=t.id, comment="All clean-room artifacts synthesized in stage-1/.")
                         break
             except Exception as e:
                 logger.debug("[CoderAdapter] Task update notice: %s", e)
@@ -244,7 +242,7 @@ class CoderAdapter(SimpleAdapter):
             critic_tag = f"@{critic_handles[0]}" if critic_handles else "@DarkFactoryCritic"
             handoff_msg = (
                 "[DarkFactoryCoder] Implementation Complete\n\n"
-                f"Generated {len(gen_files)} artifacts in workspace/:\n"
+                f"Generated {len(gen_files)} artifacts in stage-1/:\n"
                 + "\n".join(f"- {f}" for f in gen_files)
                 + "\n\n"
                 f"-> {critic_tag} please execute the 5-surface review suite (spec, ruff, pytest, security invariants, delivery) and upload the verification receipt."
