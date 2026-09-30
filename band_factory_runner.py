@@ -29,6 +29,12 @@ from band.core.simple_adapter import SimpleAdapter
 SUBMISSION_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SUBMISSION_DIR))
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv(SUBMISSION_DIR / ".env")
+except ImportError:
+    pass
+
 from factory import EXPECTED_SURFACE_NAMES, SoftwareFactory  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
