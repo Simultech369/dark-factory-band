@@ -15,9 +15,10 @@ READY FOR SUBMISSION. The package features a dual execution model:
 - **BAND Orchestration Runner:** [`band_factory_runner.py`](https://github.com/Simultech369/dark-factory-band/blob/main/band_factory_runner.py)
 - **Local Factory Engine:** [`factory.py`](https://github.com/Simultech369/dark-factory-band/blob/main/factory.py)
 - **Review Guardrails:** [`guardrails.py`](https://github.com/Simultech369/dark-factory-band/blob/main/guardrails.py)
-- **Generated Application:** [`workspace/pocketful/payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/workspace/pocketful/payments.py)
-- **Generated Test Suite:** [`workspace/tests/test_payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/workspace/tests/test_payments.py)
-- **Cryptographic Run Receipt:** [`run_receipt.json`](https://github.com/Simultech369/dark-factory-band/blob/main/run_receipt.json)
+- **Generated Application:** [`stage-1/pocketful/payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/stage-1/pocketful/payments.py)
+- **Generated Test Suite:** [`stage-1/tests/test_payments.py`](https://github.com/Simultech369/dark-factory-band/blob/main/stage-1/tests/test_payments.py)
+- **HTTP JSON API:** [`stage-1/server.py`](https://github.com/Simultech369/dark-factory-band/blob/main/stage-1/server.py)
+- **Local Pre-Live Run Receipt:** [`run_receipt.json`](https://github.com/Simultech369/dark-factory-band/blob/main/run_receipt.json)
 - **Specification & Documentation:** [`README.md`](https://github.com/Simultech369/dark-factory-band/blob/main/README.md)
 
 ---
@@ -40,27 +41,27 @@ The system operates as a 3-agent assembly line with an adversarial critic overla
 
 ```
 [ Human User / Room Prompt ]
-             │
-             ▼
+             |
+             v
    @DarkFactoryPlanner
-   ├── 1. Initializes Room Mission Board (`set_board`)
-   ├── 2. Creates Team Tasks on Board (`create_task`)
-   ├── 3. Emits Spec Decomposition Thought Event (`send_event`)
-   └── 4. Handoff to @DarkFactoryCoder via @mention
-             │
-             ▼
+   +-- 1. Initializes Room Mission Board (`set_board`)
+   +-- 2. Creates Team Tasks on Board (`create_task`)
+   +-- 3. Emits Spec Decomposition Thought Event (`send_event`)
+   \-- 4. Handoff to @DarkFactoryCoder via @mention
+             |
+             v
     @DarkFactoryCoder
-   ├── 1. Materializes 5 clean-room artifacts in workspace/
-   ├── 2. Emits tool execution events with file lists (`send_event`)
-   └── 3. Dispatches audit request to @DarkFactoryCritic via @mention
-             │
-             ▼
+   +-- 1. Materializes clean-room artifacts in stage-1/
+   +-- 2. Emits tool execution events with file lists (`send_event`)
+   \-- 3. Dispatches audit request to @DarkFactoryCritic via @mention
+             |
+             v
     @DarkFactoryCritic
-   ├── 1. Executes 5 Review Surfaces (Spec, Ruff, Pytest, AST Invariants, Delivery)
-   ├── 2. Emits audit check events for each surface
-   ├── 3. Generates cryptographic SHA-256 run receipt (`run_receipt.json`)
-   ├── 4. Uploads receipt directly into BAND Room (`send_room_file`)
-   └── 5. Renders final VERIFIED / REJECTED verdict to the room
+   +-- 1. Executes 5 Review Surfaces (Spec, Ruff, Pytest, AST Invariants, Delivery)
+   +-- 2. Emits audit check events for each surface
+   +-- 3. Generates cryptographic SHA-256 run receipt (`run_receipt.json`)
+   +-- 4. Uploads receipt directly into BAND Room (`send_room_file`)
+   \-- 5. Renders final VERIFIED / REJECTED verdict to the room
 ```
 
 ---

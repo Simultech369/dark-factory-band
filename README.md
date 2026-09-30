@@ -37,7 +37,12 @@ This repository adheres to the official Dark Factory packaging standard:
 ├── mandates/              # Track-generic agent seat instructions
 │   ├── planner.md         # System Architect & Decomposition Planner mandate
 │   ├── coder.md           # Clean-Room Implementation Engineer mandate
-│   └── critic.md          # Adversarial Quality & Security Auditor mandate
+│   ├── critic.md          # Adversarial Quality & Security Auditor mandate
+│   ├── DarkFactoryPlanner.md # Seat-named mandate
+│   ├── DarkFactoryCoder.md   # Seat-named mandate
+│   └── DarkFactoryCritic.md  # Seat-named mandate
+├── scripts/               # Pre-commit & credential hygiene utilities
+│   └── sanitize_room_json.py # Exported room transcript credential scanner & auditor
 ├── stage-1/               # Clean-room materialized payment ledger package
 │   ├── Dockerfile         # Clean container definition (python:3.12-slim)
 │   ├── RUN.md             # Container & local execution guide
