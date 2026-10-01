@@ -1,0 +1,822 @@
+{
+  "schema_version": "band.room_transcript.v1",
+  "room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+  "chat": {
+    "data": {
+      "id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "inserted_at": "2026-09-27 23:53:18.034954+00:00",
+      "task_id": null,
+      "title": "New Session",
+      "updated_at": "2026-09-30 23:43:11.464886+00:00"
+    }
+  },
+  "board": {
+    "data": {
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "goal_summary": "Autonomous generation, linting, testing, and evidence custody of a Venmo-like payment ledger.",
+      "goal_title": "Pocketful Clean-Room Dark Factory",
+      "history": null,
+      "history_truncated": null,
+      "inserted_at": "2026-09-28 14:14:53.898332+00:00",
+      "updated_at": "2026-09-28 14:14:53.898332+00:00",
+      "updated_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      }
+    }
+  },
+  "tasks": [
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Define thread-safe in-memory ledger architecture and 5 review invariants.",
+      "history": null,
+      "history_truncated": null,
+      "id": "92b6b2c8-64e2-4d88-a62d-57ca3e9fef72",
+      "inserted_at": "2026-09-28 14:14:55.720634+00:00",
+      "number": 1,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "1. Architecture & Specification Plan",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 14:14:55.720634+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Generate pyproject.toml, README.md, pocketful/payments.py, tests/test_payments.py.",
+      "history": null,
+      "history_truncated": null,
+      "id": "776ece17-7937-43c3-b832-b49eaec2e748",
+      "inserted_at": "2026-09-28 14:14:55.795141+00:00",
+      "number": 2,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "2. Materialize Clean-Room Implementation",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-30 23:43:03.776216+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Execute Surface 1-5 checks (ruff, pytest, security) and upload run_receipt.json.",
+      "history": null,
+      "history_truncated": null,
+      "id": "97e408c8-1d18-4905-a678-5b50ff21b383",
+      "inserted_at": "2026-09-28 14:14:55.865397+00:00",
+      "number": 3,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "3. Multi-Surface Audit & Receipt Custody",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-30 23:43:11.373551+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Define thread-safe in-memory ledger architecture and 5 review invariants.",
+      "history": null,
+      "history_truncated": null,
+      "id": "af38e1d5-9fc8-415d-9662-84dda8bb4874",
+      "inserted_at": "2026-09-28 14:16:03.420437+00:00",
+      "number": 4,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "1. Architecture & Specification Plan",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 14:16:03.420437+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Generate pyproject.toml, README.md, pocketful/payments.py, tests/test_payments.py.",
+      "history": null,
+      "history_truncated": null,
+      "id": "ad6b66e2-b421-40b9-bdb4-f17acd52e048",
+      "inserted_at": "2026-09-28 14:16:03.492426+00:00",
+      "number": 5,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "2. Materialize Clean-Room Implementation",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 14:16:03.492426+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Execute Surface 1-5 checks (ruff, pytest, security) and upload run_receipt.json.",
+      "history": null,
+      "history_truncated": null,
+      "id": "ab562676-c6d3-4157-bb5f-c0bf88022a9b",
+      "inserted_at": "2026-09-28 14:16:03.561795+00:00",
+      "number": 6,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "3. Multi-Surface Audit & Receipt Custody",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 14:16:03.561795+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Define thread-safe in-memory ledger architecture and 5 review invariants.",
+      "history": null,
+      "history_truncated": null,
+      "id": "3f94f9ea-5277-48c2-81c9-f1fb039ce333",
+      "inserted_at": "2026-09-28 18:06:37.363856+00:00",
+      "number": 7,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "1. Architecture & Specification Plan",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:37.363856+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Generate pyproject.toml, README.md, pocketful/payments.py, tests/test_payments.py.",
+      "history": null,
+      "history_truncated": null,
+      "id": "71c8698c-fd69-44ed-a791-2b5bc02a01fb",
+      "inserted_at": "2026-09-28 18:06:37.474926+00:00",
+      "number": 8,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "2. Materialize Clean-Room Implementation",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:37.474926+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Execute Surface 1-5 checks (ruff, pytest, security) and upload run_receipt.json.",
+      "history": null,
+      "history_truncated": null,
+      "id": "af1da173-87a5-48a6-880d-8191552f266e",
+      "inserted_at": "2026-09-28 18:06:37.618269+00:00",
+      "number": 9,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "3. Multi-Surface Audit & Receipt Custody",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:37.618269+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Define thread-safe in-memory ledger architecture and 5 review invariants.",
+      "history": null,
+      "history_truncated": null,
+      "id": "cdac3485-4afc-414e-bf46-7bd13ca15c88",
+      "inserted_at": "2026-09-28 18:06:38.591398+00:00",
+      "number": 10,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "1. Architecture & Specification Plan",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:38.591398+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Generate pyproject.toml, README.md, pocketful/payments.py, tests/test_payments.py.",
+      "history": null,
+      "history_truncated": null,
+      "id": "85e2cf61-cbfc-4b64-9b30-6a826d16e656",
+      "inserted_at": "2026-09-28 18:06:38.698869+00:00",
+      "number": 11,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "2. Materialize Clean-Room Implementation",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:38.698869+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Execute Surface 1-5 checks (ruff, pytest, security) and upload run_receipt.json.",
+      "history": null,
+      "history_truncated": null,
+      "id": "6bcb1d6c-b307-414d-a76c-3de31e1094e2",
+      "inserted_at": "2026-09-28 18:06:38.813682+00:00",
+      "number": 12,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "3. Multi-Surface Audit & Receipt Custody",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:06:38.813682+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Define thread-safe in-memory ledger architecture and 5 review invariants.",
+      "history": null,
+      "history_truncated": null,
+      "id": "6bf6f586-b1b9-48c8-b4e2-bbb8deaed689",
+      "inserted_at": "2026-09-28 18:07:17.076789+00:00",
+      "number": 13,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "1. Architecture & Specification Plan",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:07:17.076789+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Generate pyproject.toml, README.md, pocketful/payments.py, tests/test_payments.py.",
+      "history": null,
+      "history_truncated": null,
+      "id": "f8433a4a-802f-4072-9e34-e27f78b55c75",
+      "inserted_at": "2026-09-28 18:07:17.178799+00:00",
+      "number": 14,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "2. Materialize Clean-Room Implementation",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:07:17.178799+00:00"
+    },
+    {
+      "assignments": [],
+      "chat_room_id": "84d4e744-cbe5-4014-b3c7-2b130b32b4d6",
+      "created_by": {
+        "handle": "josheduncan16/darkfactoryplanner",
+        "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+        "name": "DarkFactoryPlanner",
+        "type": "Agent"
+      },
+      "detail": "Execute Surface 1-5 checks (ruff, pytest, security) and upload run_receipt.json.",
+      "history": null,
+      "history_truncated": null,
+      "id": "b08667bc-d931-400d-a451-2692f8bca045",
+      "inserted_at": "2026-09-28 18:07:17.259212+00:00",
+      "number": 15,
+      "overall_status": "pending",
+      "state": "active",
+      "subject": "3. Multi-Surface Audit & Receipt Custody",
+      "superseded_by_id": null,
+      "updated_at": "2026-09-28 18:07:17.259212+00:00"
+    }
+  ],
+  "messages": [
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "build Pocketful @[[f2cc608e-8910-4264-8d72-e636e4278ead]] Planner will plan, \n@[[c7a87b9a-6a87-400d-87e4-d121e1c90f1d]] Coder will generate the code, and \n@[[34025974-5479-40df-b2e5-5b59246e872c]] Critic will run the tests and upload run_receipt.json right into the chat.",
+      "id": "32ad9c0d-a854-47bf-8682-7e808b237cc4",
+      "inserted_at": "2026-09-28 02:22:29.130164+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "34025974-5479-40df-b2e5-5b59246e872c": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T14:14:55.773714Z",
+                "error": "'CouncilGuardrails' object has no attribute 'review_surface_3_behavior'",
+                "started_at": "2026-09-28T14:14:53.661369Z",
+                "status": "failed"
+              },
+              {
+                "attempt_number": 2,
+                "completed_at": "2026-09-28T18:06:37.258177Z",
+                "error": null,
+                "started_at": "2026-09-28T18:06:36.518460Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 2,
+            "delivered_at": "2026-09-28T14:14:53.661369Z",
+            "processed_at": "2026-09-28T18:06:37.258177Z",
+            "status": "processed"
+          },
+          "c7a87b9a-6a87-400d-87e4-d121e1c90f1d": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T14:14:55.717904Z",
+                "error": "Pocketful spec must mention payment, wallet, balance, and transaction scope.",
+                "started_at": "2026-09-28T14:14:53.530129Z",
+                "status": "failed"
+              },
+              {
+                "attempt_number": 2,
+                "completed_at": "2026-09-28T18:06:37.575741Z",
+                "error": null,
+                "started_at": "2026-09-28T18:06:36.822466Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 2,
+            "delivered_at": "2026-09-28T14:14:53.530129Z",
+            "processed_at": "2026-09-28T18:06:37.575741Z",
+            "status": "processed"
+          },
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T14:14:56.011863Z",
+                "error": "Unknown participant 'darkfactorycoder'. Available handles: ['josheduncan16/darkfactorycritic', 'josheduncan16/darkfactorycoder', 'josheduncan16']",
+                "started_at": "2026-09-28T14:14:53.530881Z",
+                "status": "failed"
+              },
+              {
+                "attempt_number": 2,
+                "completed_at": "2026-09-28T18:06:37.995284Z",
+                "error": null,
+                "started_at": "2026-09-28T18:06:36.517045Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 2,
+            "delivered_at": "2026-09-28T14:14:53.530881Z",
+            "processed_at": "2026-09-28T18:06:37.995284Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/c7a87b9a-6a87-400d-87e4-d121e1c90f1d?g=botz-r3-vivid1&s=48&c=A287FF&l=0.701",
+            "handle": "josheduncan16/darkfactorycoder",
+            "id": "c7a87b9a-6a87-400d-87e4-d121e1c90f1d",
+            "kind": "mention",
+            "name": "DarkFactoryCoder",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/34025974-5479-40df-b2e5-5b59246e872c?g=botz-r3-vivid1&s=48&c=A57700&l=0.6",
+            "handle": "josheduncan16/darkfactorycritic",
+            "id": "34025974-5479-40df-b2e5-5b59246e872c",
+            "kind": "mention",
+            "name": "DarkFactoryCritic",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "cefd5e72-1399-4217-9366-f5ac5181c874",
+      "sender_name": "Josh Duncan",
+      "sender_type": "User",
+      "updated_at": "2026-09-28 18:06:37.999063+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[f2cc608e-8910-4264-8d72-e636e4278ead]] please plan and build Pocketful",
+      "id": "b4eb72a7-d0ce-4689-aa05-3e7c0f3d2951",
+      "inserted_at": "2026-09-28 14:16:02.961881+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T14:16:03.694170Z",
+                "error": "Unknown participant 'darkfactorycoder'. Available handles: ['josheduncan16/darkfactorycritic', 'josheduncan16/darkfactorycoder', 'josheduncan16']",
+                "started_at": "2026-09-28T14:16:03.151451Z",
+                "status": "failed"
+              },
+              {
+                "attempt_number": 2,
+                "completed_at": "2026-09-28T18:06:46.363248Z",
+                "error": null,
+                "started_at": "2026-09-28T18:06:38.186442Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 2,
+            "delivered_at": "2026-09-28T14:16:03.151451Z",
+            "processed_at": "2026-09-28T18:06:46.363248Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "cefd5e72-1399-4217-9366-f5ac5181c874",
+      "sender_name": "Josh Duncan",
+      "sender_type": "User",
+      "updated_at": "2026-09-28 18:06:46.371550+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[f2cc608e-8910-4264-8d72-e636e4278ead]] please plan and build Pocketful @DarkFactoryPlanner",
+      "id": "0fc50117-c28f-43a9-8c0b-9d0d92e6c2b1",
+      "inserted_at": "2026-09-28 18:07:16.476026+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:07:17.539674Z",
+                "error": null,
+                "started_at": "2026-09-28T18:07:16.685612Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:07:16.685612Z",
+            "processed_at": "2026-09-28T18:07:17.539674Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "cefd5e72-1399-4217-9366-f5ac5181c874",
+      "sender_name": "Josh Duncan",
+      "sender_type": "User",
+      "updated_at": "2026-09-28 18:07:17.543326+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[c7a87b9a-6a87-400d-87e4-d121e1c90f1d]] @[[f2cc608e-8910-4264-8d72-e636e4278ead]] [DarkFactoryCritic] Final Audit Verdict\n\n[VERIFIED: PASS]\n\nReview Surface Results:\n1. Surface 1 (Spec and Scope): [PASS]\n2. Surface 2 (Quality and Linting): [PASS]\n3. Surface 3 (Behavioral Verification): [PASS]\n4. Surface 4 (Security Invariants): [PASS]\n5. Surface 5 (Delivery): [PASS]\n\nReceipt: Uploaded run_receipt.json to this room with cryptographic SHA-256 hashes of all generated files.\nFactory run complete. Production-ready clean-room artifact validated.",
+      "id": "61ed8273-e1c7-41b0-abfe-a03b13f8f808",
+      "inserted_at": "2026-09-28 18:16:33.209288+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "c7a87b9a-6a87-400d-87e4-d121e1c90f1d": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:35.769369Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:33.622386Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:33.622386Z",
+            "processed_at": "2026-09-28T18:16:35.769369Z",
+            "status": "processed"
+          },
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:33.803672Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:33.513851Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:33.513851Z",
+            "processed_at": "2026-09-28T18:16:33.803672Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/c7a87b9a-6a87-400d-87e4-d121e1c90f1d?g=botz-r3-vivid1&s=48&c=A287FF&l=0.701",
+            "handle": "josheduncan16/darkfactorycoder",
+            "id": "c7a87b9a-6a87-400d-87e4-d121e1c90f1d",
+            "kind": "mention",
+            "name": "DarkFactoryCoder",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "34025974-5479-40df-b2e5-5b59246e872c",
+      "sender_name": "DarkFactoryCritic",
+      "sender_type": "Agent",
+      "updated_at": "2026-09-28 18:16:35.773582+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[c7a87b9a-6a87-400d-87e4-d121e1c90f1d]] @[[f2cc608e-8910-4264-8d72-e636e4278ead]] [DarkFactoryCritic] Final Audit Verdict\n\n[VERIFIED: PASS]\n\nReview Surface Results:\n1. Surface 1 (Spec and Scope): [PASS]\n2. Surface 2 (Quality and Linting): [PASS]\n3. Surface 3 (Behavioral Verification): [PASS]\n4. Surface 4 (Security Invariants): [PASS]\n5. Surface 5 (Delivery): [PASS]\n\nReceipt: Uploaded run_receipt.json to this room with cryptographic SHA-256 hashes of all generated files.\nFactory run complete. Production-ready clean-room artifact validated.",
+      "id": "eaa3b72a-c85a-4afe-b5bf-aa1307175420",
+      "inserted_at": "2026-09-28 18:16:36.611244+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "c7a87b9a-6a87-400d-87e4-d121e1c90f1d": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:37.404132Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:36.774337Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:36.774337Z",
+            "processed_at": "2026-09-28T18:16:37.404132Z",
+            "status": "processed"
+          },
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:37.238797Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:36.722962Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:36.722962Z",
+            "processed_at": "2026-09-28T18:16:37.238797Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/c7a87b9a-6a87-400d-87e4-d121e1c90f1d?g=botz-r3-vivid1&s=48&c=A287FF&l=0.701",
+            "handle": "josheduncan16/darkfactorycoder",
+            "id": "c7a87b9a-6a87-400d-87e4-d121e1c90f1d",
+            "kind": "mention",
+            "name": "DarkFactoryCoder",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "34025974-5479-40df-b2e5-5b59246e872c",
+      "sender_name": "DarkFactoryCritic",
+      "sender_type": "Agent",
+      "updated_at": "2026-09-28 18:16:37.408305+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[c7a87b9a-6a87-400d-87e4-d121e1c90f1d]] @[[f2cc608e-8910-4264-8d72-e636e4278ead]] [DarkFactoryCritic] Final Audit Verdict\n\n[VERIFIED: PASS]\n\nReview Surface Results:\n1. Surface 1 (Spec and Scope): [PASS]\n2. Surface 2 (Quality and Linting): [PASS]\n3. Surface 3 (Behavioral Verification): [PASS]\n4. Surface 4 (Security Invariants): [PASS]\n5. Surface 5 (Delivery): [PASS]\n\nReceipt: Uploaded run_receipt.json to this room with cryptographic SHA-256 hashes of all generated files.\nFactory run complete. Production-ready clean-room artifact validated.",
+      "id": "8f7714e4-201a-4660-bdfe-6406a18c6562",
+      "inserted_at": "2026-09-28 18:16:41.557902+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "c7a87b9a-6a87-400d-87e4-d121e1c90f1d": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:42.129549Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:41.757891Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:41.757891Z",
+            "processed_at": "2026-09-28T18:16:42.129549Z",
+            "status": "processed"
+          },
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-28T18:16:41.990722Z",
+                "error": null,
+                "started_at": "2026-09-28T18:16:41.698596Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-28T18:16:41.698596Z",
+            "processed_at": "2026-09-28T18:16:41.990722Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/c7a87b9a-6a87-400d-87e4-d121e1c90f1d?g=botz-r3-vivid1&s=48&c=A287FF&l=0.701",
+            "handle": "josheduncan16/darkfactorycoder",
+            "id": "c7a87b9a-6a87-400d-87e4-d121e1c90f1d",
+            "kind": "mention",
+            "name": "DarkFactoryCoder",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "34025974-5479-40df-b2e5-5b59246e872c",
+      "sender_name": "DarkFactoryCritic",
+      "sender_type": "Agent",
+      "updated_at": "2026-09-28 18:16:42.134670+00:00"
+    },
+    {
+      "attachments": [],
+      "chat_room_id": null,
+      "content": "@[[c7a87b9a-6a87-400d-87e4-d121e1c90f1d]] @[[f2cc608e-8910-4264-8d72-e636e4278ead]] [DarkFactoryCritic] Final Audit Verdict\n\n[VERIFIED: PASS]\n\nReview Surface Results:\n1. Surface 1 (Spec and Scope): [PASS]\n2. Surface 2 (Quality and Linting): [PASS]\n3. Surface 3 (Behavioral Verification): [PASS]\n4. Surface 4 (Security Invariants): [PASS]\n5. Surface 5 (Delivery): [PASS]\n\nReceipt: Uploaded run_receipt.json to this room with cryptographic SHA-256 hashes of all generated files.\nFactory run complete. Production-ready clean-room artifact validated.",
+      "id": "865bce35-3248-4da1-b190-22afeeb9e6cf",
+      "inserted_at": "2026-09-30 23:43:11.462314+00:00",
+      "message_type": "text",
+      "metadata": {
+        "delegation": null,
+        "delivery_status": {
+          "c7a87b9a-6a87-400d-87e4-d121e1c90f1d": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-30T23:43:12.138825Z",
+                "error": null,
+                "started_at": "2026-09-30T23:43:11.816342Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-30T23:43:11.816342Z",
+            "processed_at": "2026-09-30T23:43:12.138825Z",
+            "status": "processed"
+          },
+          "f2cc608e-8910-4264-8d72-e636e4278ead": {
+            "attempts": [
+              {
+                "attempt_number": 1,
+                "completed_at": "2026-09-30T23:43:12.179034Z",
+                "error": null,
+                "started_at": "2026-09-30T23:43:11.873985Z",
+                "status": "success"
+              }
+            ],
+            "current_attempt": 1,
+            "delivered_at": "2026-09-30T23:43:11.873985Z",
+            "processed_at": "2026-09-30T23:43:12.179034Z",
+            "status": "processed"
+          }
+        },
+        "mentions": [
+          {
+            "avatar_url": "https://api.band.ai/avatars/f2cc608e-8910-4264-8d72-e636e4278ead?g=botz-r3-vivid1&s=48&c=C56000&l=0.601",
+            "handle": "josheduncan16/darkfactoryplanner",
+            "id": "f2cc608e-8910-4264-8d72-e636e4278ead",
+            "kind": "mention",
+            "name": "DarkFactoryPlanner",
+            "type": "agent"
+          },
+          {
+            "avatar_url": "https://api.band.ai/avatars/c7a87b9a-6a87-400d-87e4-d121e1c90f1d?g=botz-r3-vivid1&s=48&c=A287FF&l=0.701",
+            "handle": "josheduncan16/darkfactorycoder",
+            "id": "c7a87b9a-6a87-400d-87e4-d121e1c90f1d",
+            "kind": "mention",
+            "name": "DarkFactoryCoder",
+            "type": "agent"
+          }
+        ],
+        "status": "sent"
+      },
+      "sender_id": "34025974-5479-40df-b2e5-5b59246e872c",
+      "sender_name": "DarkFactoryCritic",
+      "sender_type": "Agent",
+      "updated_at": "2026-09-30 23:43:12.181529+00:00"
+    }
+  ]
+}
